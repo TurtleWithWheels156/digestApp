@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "digest",
-    "slug": "digest",
+    "slug": "bindle",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.turtlewithwheels156.bindle"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +26,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cef03518-c8c9-42b9-8c4d-d08ea7652dbc"
+      }
+    },
+    "owner": "turtlewithwheels156"
   }
 }
