@@ -7,7 +7,8 @@ import List from './app/screens/List';
 import Details from './app/screens/Details';
 import { useEffect, useState } from 'react';
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword, User, onAuthStateChanged } from 'firebase/auth';
-import { FIREBASE_AUTH } from './FirebaseConfig';
+import { DocumentData, collection, onSnapshot, doc, getDoc } from 'firebase/firestore';
+import { FIREBASE_AUTH, FIRESTORE_DB } from './FirebaseConfig';
 
 
 const Stack = createNativeStackNavigator();
@@ -16,7 +17,7 @@ const InsideStack = createNativeStackNavigator();
 
 function InsideLayout () {
   return <InsideStack.Navigator>
-    <InsideStack.Screen name='My TODOS' component={List}/>
+    <InsideStack.Screen name='My tōt' component={List}/>
     <InsideStack.Screen name='Details' component={Details}/>
   </InsideStack.Navigator>
 
@@ -31,6 +32,7 @@ function InsideLayout () {
       <StatusBar style="auto" />
     </View>
   */
+
 export default function App() {
   console.log("hey");
   const [user, setUser] = useState<User | null>(null);

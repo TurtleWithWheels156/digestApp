@@ -12,9 +12,11 @@
   - Name
   - Quantity
   - Date Purchased
-  - Receipt URL (See Receipt)
+  - Receipt URL (See Receipt)q
 
 //Receipt maybe
 -ReceiptId
 -Image
 -Metadata
+
+// APP Flow
